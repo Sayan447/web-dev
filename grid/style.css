@@ -1,18 +1,25 @@
-.container{
-    background-color: brown;
+html,body{
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
+}
+
+.container{
+    background-color: brown;
+    height: 800px;
+    width: 800px;
     display: grid;
-    padding: 0.1px;
+    padding: 0;
     gap: 10px;
     /* overflow: hidden; */
     /* grid-template-columns:10vw 20vw 30vw; */
     /* grid-template-columns:2fr 3fr auto */
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 100px);
     /* repeat means how many want to repeat, dividing the parent space in 4 piece */
 
     /* grid-template-rows: 200px 200px 200px; */
-    grid-template-rows: repeat(3 , 1fr);
+    grid-template-rows: repeat(4 , 100px);
 
 }
 
@@ -25,6 +32,23 @@
 
 #box-1{
     background-color: antiquewhite;
+    /* justify-self: center;
+    align-self: end; upword */
+    /* align self works only Y-axis */
+
+
+
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+
+    /* short hand property for grid-column-start and grid-column-row is grid-column */
+     grid-column: 1 / 4;
+
+/* 
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    grid-row: 1 / 4;
 }
 
 /* grid work in both way x and y axis */
