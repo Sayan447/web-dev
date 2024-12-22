@@ -28,7 +28,11 @@ console.log(typeof(b));
 
 // non-primitive ----> store only heap(i.e ram)
 
-// array
+// array []
+// 1. Linear DS
+// 2. Homogeneous / Heterogenous
+// 3. Indexed Collection Element
+// 4.Contiguous Memory
 // object
 
 
