@@ -1,7 +1,7 @@
-let arr = [10 , 52 ,80 , 65 , 56]
-let value = arr.reduce((pre , curr)=>{
-    return pre + curr
-})// by default previous value is 0, if we want to put any value we can set pre's value
+// let arr = [10 , 52 ,80 , 65 , 56]
+// let value = arr.reduce((pre , curr)=>{
+//     return pre + curr
+// })// by default previous value is 0, if we want to put any value we can set pre's value
 
 
 // console.log(value);
@@ -45,26 +45,28 @@ let value = arr.reduce((pre , curr)=>{
 
 
 // a object is a collection of key value pair 
-let obj = {
-    name: "BCA",
-    age: '3 Y',
-    iscertified: true,
-    job: function(){
-        console.log(coding);
-        
-    },
+// let obj = {
+//     name: "BCA",
+//     age: '3 Y',
+//     iscertified: true,
+//     job: function(){
+//         console.log('coding');
+//         console.log(this); // this is only availabe in console 
+//     },
 
-    courses: ['FSWD' , "DSA" , "JRM"],
-    obj2:{
-        student: ["Sagnik" , 'Pol' , 'Arju' , 'Suman'],
-        time : '9:30 am to 11:30 am IST Sat Sun',
-        activity: function(){
-            console.log("Coding Tutorial");
-        }
-    }
-}
+//     courses: ['FSWD' , "DSA" , "JRM"],
+//     obj2:{
+//         student: ["Sagnik" , 'Pol' , 'Arju' , 'Suman'],
+//         time : '9:30 am to 11:30 am IST Sat Sun',
+//         activity: function(){
+//             console.log("Coding Tutorial");
+//             console.log(this);
+            
+//         }
+//     }
+// }
 
-obj.obj2.activity() // Coding Tutorial
+// obj.obj2.activity() // Coding Tutorial
 
 // obj.courses.forEach((ele)=>{
 //     console.log(ele);
@@ -76,10 +78,64 @@ obj.obj2.activity() // Coding Tutorial
 // DSA
 // JRM
 
+// console.log(obj.obj2.student[3]);
+// Suman
+
+
+
+// console.log(obj['name']); // BCA
+// obj['job']();
+// coding
+
+
+// console.log(obj['obj2']['student'][2]
+// ); // Arju
+ 
+
+
+
+// obj.job() // print everything in the parents
+// obj.obj2.activity()
 
 
 
 
-// 36:21
 
 
+
+
+// let o1 = {
+//     name: 'BCA',
+//     age: '3 Y',
+//     iscertificate : true,
+// };
+
+// let o2 = o1; // this is called deep copy
+
+// o2.age = '5 Y';
+
+// console.log(o1.age , o2.age); // 5y 5y
+
+
+// shallow copy[spread operator]
+let o1 = {
+    name: 'BCA',
+    age: '3 Y',
+    iscertificate : true,
+};
+
+o2 = {...o1}; // this is called shallow copy
+
+o2.age = '5 Y';
+
+console.log(o1.age , o2.age);
+// 3 Y 5 Y
+
+
+
+
+let arr1 = [10,54,87,65,18]
+let arr2 = [...arr1 , 97 ,135, 497]
+console.log(arr2);
+
+// 1:12:20
