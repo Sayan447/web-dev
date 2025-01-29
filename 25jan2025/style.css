@@ -1,0 +1,5 @@
+/* background color through css */
+#container-h1{
+    background-color: aqua;
+}
+/* but we want to do this by js */
