@@ -51,3 +51,31 @@ containerh2.style.cursor='pointer'
 //         h1.style.color = 'green'
 //     }
 // }
+
+
+
+
+function ChangeColorToPink(){
+    document.getElementById('box-1').style.backgroundColor = 'pink'
+}
+function ChangeColorToOrange(){
+    document.getElementById('box-2').style.backgroundColor = 'orange'
+}
+function ChangeColorToGreen(){
+    document.getElementById('box-3').style.backgroundColor = 'green'
+}
+function ChangeColorToBlue(){
+    document.getElementById('box-4').style.backgroundColor = 'blue'
+}
+function ChangeColorToRed(){
+    document.getElementById('box-5').style.backgroundColor = 'red'
+}
+function ChangeColorToViolet(){
+    document.getElementById('box-6').style.backgroundColor = 'violet'
+}
+
+
+
+
+
+// js is single thread and synchronus. cannot use multithreaded
